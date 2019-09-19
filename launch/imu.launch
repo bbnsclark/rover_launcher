@@ -1,0 +1,16 @@
+<launch>
+
+  <node pkg="tf" type="static_transform_publisher" name="TF_IMU" args="0.0 0.05 0.0 0.0 0.0 0.0 base_link imu_link 100" />
+
+  <arg name="razor_config_file" default="$(env WS_PATH)/params/imu.yaml"/>
+
+  <node pkg="razor_imu_9dof" type="imu_node.py" name="IMU" output="screen">
+    <param name="frame_id" type="string" value="imu_link"/>
+    <param name="publish_tf" type="bool" value="false"/>
+    <rosparam file="$(arg razor_config_file)" command="load"/>
+    <remap from="diagnostics" to="imu/diagnostics"/>
+    <remap from="/IMU/parameter_descriptions" to="imu/descriptions"/>
+    <remap from="/IMU/parameter_updates" to="imu/updates"/>
+  </node>
+
+</launch>
