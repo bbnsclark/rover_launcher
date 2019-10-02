@@ -1,2 +1,2 @@
-rosservice call cmd_state 'cmd: "set" target_state: "indoor"'
+rosservice call set_mode 'cmd: "set" target_state: "global"'
 
