@@ -4,10 +4,6 @@ screen -d -m -S roscore /home/nvidia/rover/src/rover_launcher/bin/start_roscore.
 
 sleep 5
 
-screen -d -m -S realsense /home/nvidia/rover/src/rover_launcher/bin/start_realsense.sh
-
-sleep 5
-
 screen -d -m -S bridge /home/nvidia/rover/src/rover_launcher/bin/start_bridge.sh
 
 sleep 5
@@ -33,3 +29,9 @@ screen -d -m -S ekf_inertial /home/nvidia/rover/src/rover_launcher/bin/start_ekf
 sleep 5
 
 screen -d -m -S state_obs /home/nvidia/rover/src/rover_launcher/bin/start_state_observer.sh
+
+sleep 5
+
+screen -d -m -S realsense /home/nvidia/rover/src/rover_launcher/bin/start_realsense.sh
+
+
