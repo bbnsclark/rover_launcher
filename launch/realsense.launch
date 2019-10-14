@@ -17,7 +17,7 @@
   <arg name="infra_width"        default="640"/>
   <arg name="infra_height"       default="480"/>
   <arg name="enable_infra1"       default="true"/>
-  <arg name="enable_infra2"       default="false"/>
+  <arg name="enable_infra2"       default="true"/>
 
   <arg name="color_width"         default="640"/>
   <arg name="color_height"        default="480"/>
@@ -44,7 +44,7 @@
   <arg name="linear_accel_cov"      default="0.01"/>
   <arg name="initial_reset"         default="true"/>
   <arg name="unite_imu_method"      default=""/>
-  <arg name="topic_odom_in"         default="odom_ind"/>
+  <arg name="topic_odom_in"         default="odom_inertial"/>
   <arg name="calib_odom_file"       default=""/>
   <arg name="publish_odom_tf"       default="true"/>
 
