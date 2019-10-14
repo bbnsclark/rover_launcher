@@ -71,7 +71,7 @@
   <arg name="aligned_depth_to_fisheye2_frame_id" default="$(arg tf_prefix)_aligned_depth_to_fisheye2_frame"/>
 
   <arg name="odom_frame_id"            default="odom"/>
-  <arg name="topic_odom_in"            default="odom_ind"/>
+  <arg name="topic_odom_in"            default="odom_inertial"/>
   <arg name="calib_odom_file"          default=""/>
   <arg name="publish_odom_tf"          default="false"/>
   <arg name="filters"                  default=""/>
@@ -83,7 +83,7 @@
 
   <node pkg="nodelet" type="nodelet" name="$(arg manager)" args="manager" output="screen"/>
 
-  <node pkg="tf" type="static_transform_publisher" name="TF_RS" args="0.14 0.0 0.1 0.0 0.0 0.0 1.0 base_link camera_link 100" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_RS" args="0.14 0.0 0.1 -1.5707 0.0 -1.5707 base_link camera_link 100" />
   <node pkg="tf" type="static_transform_publisher" name="TF_DOF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_depth_optical_frame 100" />
   <node pkg="tf" type="static_transform_publisher" name="TF_DF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_depth_frame 100" />
   <node pkg="tf" type="static_transform_publisher" name="TF_CF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_color_frame 100" />
