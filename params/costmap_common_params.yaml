@@ -25,3 +25,7 @@ obstacle_layer:
 inflation_layer:
   enabled:              true
   observation_sources: scan
+  inflation_radius: 0.3
+  cost_scaling_factor: 3.0
+  obstacle_range: 3.0
+  raytrace_range: 3.5
