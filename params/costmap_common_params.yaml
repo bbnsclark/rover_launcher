@@ -1,9 +1,15 @@
 
+obstacle_range: 3.0
+raytrace_range: 3.5
+
 footprint: [[-0.35, -0.25], [-0.35, 0.25], [0.35, 0.25], [0.35, -0.25]]
 
+inflation_radius: 0.3
+cost_scaling_factor: 3.0
+
 map_type: costmap
-observation_sources: scan
-inflation_radius:     0.3
+observation_sources: scan stereo
+
 
 scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true}
