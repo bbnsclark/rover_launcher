@@ -11,7 +11,6 @@ map_type: costmap
 observation_sources: scan
 
 scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
-stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true}
 
 obstacle_layer:
   enabled: true
@@ -21,6 +20,7 @@ obstacle_layer:
   min_obstacle_height: -2.0
   inflation_radius: 0.5
   observation_sources: scan stereo
+  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true}
   
 inflation_layer:
   enabled:              true
