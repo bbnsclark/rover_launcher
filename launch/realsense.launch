@@ -23,10 +23,10 @@
   <arg name="color_height"        default="480"/>
   <arg name="enable_color"        default="true"/>
 
-  <arg name="fisheye_fps"         default="5"/>
-  <arg name="depth_fps"           default="5"/>
-  <arg name="infra_fps"           default="5"/>
-  <arg name="color_fps"           default="5"/>
+  <arg name="fisheye_fps"         default="15"/>
+  <arg name="depth_fps"           default="15"/>
+  <arg name="infra_fps"           default="15"/>
+  <arg name="color_fps"           default="15"/>
   <arg name="gyro_fps"            default="400"/>
   <arg name="accel_fps"           default="250"/>
   <arg name="enable_gyro"         default="false"/>
@@ -34,7 +34,7 @@
 
   <arg name="enable_pointcloud"         default="true"/>
   <arg name="pointcloud_texture_stream" default="RS2_STREAM_COLOR"/>
-  <arg name="pointcloud_texture_index"  default="3"/>
+  <arg name="pointcloud_texture_index"  default="0"/>
 
   <arg name="enable_sync"           default="true"/>
   <arg name="align_depth"           default="true"/>
