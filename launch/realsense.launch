@@ -11,7 +11,7 @@
   <node pkg="tf" type="static_transform_publisher" name="TF_ADCF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_aligned_depth_to_color_frame 100" /> 
 
   <group ns="$(arg camera)">
-    <include file="$(find realsense2_camera)/launch/includes/nodelet.launch.xml">
+    <include file="$HOME/rover/src/rover_launcher/params/realsense.xml">
       <arg name="serial_no"         value="$(arg serial_no)"/>
       <arg name="json_file_path"    value="$(arg json_file_path)"/>
       <arg name="depth_width"       value="640"/>
