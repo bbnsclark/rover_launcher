@@ -3,6 +3,13 @@
   <arg name="json_file_path"        default=""/>
   <arg name="camera"                default="camera"/>
 
+  <node pkg="tf" type="static_transform_publisher" name="TF_RS" args="0.14 0.0 0.1 -1.5707 0.0 -1.5707 base_link camera_link 100" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_DOF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_depth_optical_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_DF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_depth_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_CF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_color_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_COF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_color_optical_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_ADCF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_aligned_depth_to_color_frame 100" /> 
+
   <group ns="$(arg camera)">
     <include file="$(find realsense2_camera)/launch/includes/nodelet.launch.xml">
       <arg name="serial_no"         value="$(arg serial_no)"/>
@@ -21,7 +28,10 @@
       <arg name="enable_gyro"       value="false"/>
       <arg name="enable_accel"      value="false"/>
       <arg name="enable_pointcloud" value="true"/>
-      <arg name="enable_sync"       value="true"/>
+      <arg name="pointcloud_texture_stream" default="RS2_STREAM_COLOR"/>
+      <arg name="pointcloud_texture_index"  default="0"/>
+      <arg name="enable_sync"           default="true"/>
+      <arg name="align_depth"           default="true"/>
       <arg name="tf_prefix"         value="$(arg camera)"/>
     </include>
   </group>
