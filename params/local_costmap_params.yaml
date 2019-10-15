@@ -12,3 +12,8 @@ local_costmap:
   height: 7
 
   resolution: 0.05
+
+  plugins:
+    - {name: obstacles, type: "costmap_2d::VoxelLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+    
