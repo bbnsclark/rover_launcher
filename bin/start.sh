@@ -10,6 +10,8 @@ sleep 5
 
 screen -d -m -S realsense /home/nvidia/rover/src/rover_launcher/bin/start_realsense.sh
 
+sleep 5
+
 screen -d -m -S imu /home/nvidia/rover/src/rover_launcher/bin/start_imu.sh
 
 sleep 10
