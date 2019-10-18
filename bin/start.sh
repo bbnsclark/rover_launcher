@@ -14,7 +14,7 @@ sleep 5
 
 screen -d -m -S imu /home/nvidia/rover/src/rover_launcher/bin/start_imu.sh
 
-sleep 50
+sleep 5
 
 screen -d -m -S drive /home/nvidia/rover/src/rover_launcher/bin/start_drive.sh
 
