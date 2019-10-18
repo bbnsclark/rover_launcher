@@ -8,6 +8,8 @@ screen -d -m -S bridge /home/nvidia/rover/src/rover_launcher/bin/start_bridge.sh
 
 sleep 5
 
+screen -d -m -S realsense /home/nvidia/rover/src/rover_launcher/bin/start_realsense.sh
+
 screen -d -m -S imu /home/nvidia/rover/src/rover_launcher/bin/start_imu.sh
 
 sleep 10
@@ -31,7 +33,4 @@ sleep 5
 screen -d -m -S state_obs /home/nvidia/rover/src/rover_launcher/bin/start_state_observer.sh
 
 sleep 5
-
-screen -d -m -S realsense /home/nvidia/rover/src/rover_launcher/bin/start_realsense.sh
-
 
