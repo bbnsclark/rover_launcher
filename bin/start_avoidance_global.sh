@@ -7,4 +7,4 @@
 set -a
 source $HOME/rover/src/rover_launcher/config/CCAST_CONFIG
 
-roslaunch $HOME/rover/src/rover_launcher/launch/avoidance_global.rover_launcher
+roslaunch $HOME/rover/src/rover_launcher/launch/avoidance_global.launch
