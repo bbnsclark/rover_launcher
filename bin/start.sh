@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#screen -d -m -S network /home/nvidia/rover/src/rover_launcher/bin/start_network.sh
+
+sleep 5
+
 screen -d -m -S roscore /home/nvidia/rover/src/rover_launcher/bin/start_roscore.sh
 
 sleep 5
