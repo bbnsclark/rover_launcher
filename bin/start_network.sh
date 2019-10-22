@@ -22,6 +22,7 @@ launch_auto_hostname() {
 
 
 launch_avahi_service() {
+  source "/etc/CCAST_CONFIG"
     local device_info=""
     # There's (apparently) a 255 character-limit on the text line in the configuration file...
     while IFS='' read -r line; do
