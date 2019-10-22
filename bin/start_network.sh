@@ -1,5 +1,8 @@
 #! /bin/bash
 
+CCAST_CONFIG_FILE="/etc/CCAST_CONFIG"
+CCAST_AVAHI_SERVICE_CONFIG="/etc/avahi/services/ccast.service"
+
 set_hostname() {
   source "/etc/CCAST_CONFIG" 2> /dev/null
   # Set the hostname from the MAC address
@@ -10,7 +13,7 @@ set_hostname() {
   echo "$hostname" > /etc/hostname
   sed -i "/$hostname/d" "/etc/hosts" 
   grep "$hostname" /etc/hosts > /dev/null 2>&1 || echo "127.0.1.1 $hostname" >> /etc/hosts
-  su nvidia hostnamectl set-hostname $hostname
+  hostnamectl set-hostname $hostname
 }
 
 launch_auto_hostname() {
