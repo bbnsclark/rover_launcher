@@ -10,7 +10,7 @@ print_diagnostics: false
 debug: false
 debug_out_file: /home/nvidia/ws/src/robot_localization/logs/ekf_local_debug.log
 
-publish_tf: false
+publish_tf: true
 publish_acceleration: false
 
 map_frame: map_inertial     # Defaults to "map" if unspecified
@@ -33,7 +33,7 @@ odom0_queue_size: 10
 
 odom0_nodelay: false
 
-odom0_differential: false
+odom0_differential: true
 
 odom0_relative: false
 
