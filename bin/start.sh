@@ -39,4 +39,3 @@ sleep 5
 screen -d -m -S state_obs /home/nvidia/rover/src/rover_launcher/bin/start_state_observer.sh
 
 sleep 5
-
