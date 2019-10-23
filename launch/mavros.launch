@@ -11,8 +11,8 @@
 	<arg name="respawn_mavros" default="false" />
 
 	<include file="$(find mavros)/launch/node.launch">
-		<arg name="pluginlists_yaml" value="/home/nvidia/rover/src/rover_launcher/params/mavros_pluginlists.yaml" />
-		<arg name="config_yaml" value="/home/nvidia/rover/src/rover_launcher/params/mavros_config.yaml" />
+		<arg name="pluginlists_yaml" value="$(env HOME)/rover/src/rover_launcher/params/mavros_pluginlists.yaml" />
+		<arg name="config_yaml" value="$(env HOME)/rover/src/rover_launcher/params/mavros_config.yaml" />
 
 		<arg name="fcu_url" value="$(arg fcu_url)" />
 		<arg name="gcs_url" value="$(arg gcs_url)" />
