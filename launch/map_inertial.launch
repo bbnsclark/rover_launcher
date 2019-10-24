@@ -43,9 +43,9 @@
 
   </node>
 
-  <!--master auto="start"/>
+  <master auto="start"/>
 
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find gmapping)/maps/map.pgm 0.04">
+  <!--node name="map_server" pkg="map_server" type="map_server" args="$(find gmapping)/maps/map.pgm 0.04">
     <remap from="/odom" to ="/odom_local" />
   </node-->
 
