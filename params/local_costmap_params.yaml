@@ -13,11 +13,9 @@ local_costmap:
 
   resolution: 0.03
 
-  observation_sources: scan
+  observation_sources: scan stereo
 
   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 
-  obstacles:
-    observation_sources: stereo
-    stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, observation_persistence: 1.0}
+  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, observation_persistence: 1.0}
     
