@@ -10,7 +10,7 @@ global_costmap:
 
   resolution: 0.03
 
-  observation_sources: scan stereo
+  observation_sources: scan
   
   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 
