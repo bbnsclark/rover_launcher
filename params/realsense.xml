@@ -75,9 +75,9 @@
   <arg name="odom_frame_id"            default="$(arg tf_prefix)_odom_frame"/>
   <arg name="topic_odom_in"            default="$(arg tf_prefix)/odom_in"/>
   <arg name="calib_odom_file"          default=""/>
-  <arg name="publish_odom_tf"          default="true"/>
+  <arg name="publish_odom_tf"          default="false"/>
   <arg name="filters"                  default=""/>
-  <arg name="clip_distance"            default="2"/>
+  <arg name="clip_distance"            default="1"/>
   <arg name="linear_accel_cov"         default="0.01"/>
   <arg name="initial_reset"            default="false"/>
   <arg name="unite_imu_method"         default="none"/> <!-- Options are: [none, copy, linear_interpolation] -->
