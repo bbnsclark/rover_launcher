@@ -8,12 +8,12 @@ local_costmap:
 
   static_map: false  
   rolling_window: true
-  width: 1
-  height: 1
+  width: 5
+  height: 5
 
   resolution: 0.03
 
-  observation_sources: scan stereo
+  observation_sources: scan
 
   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 
