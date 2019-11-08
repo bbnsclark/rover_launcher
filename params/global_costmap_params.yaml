@@ -8,7 +8,7 @@ global_costmap:
 
   static_map: true
 
-  resolution: 0.03
+  resolution: 0.015
 
   observation_sources: scan stereo
 
