@@ -4,7 +4,7 @@ local_costmap:
 
   update_frequency: 10.0
   publish_frequency: 10.0
-  transform_tolerance: 0.05  
+  transform_tolerance: 0.1 
 
   static_map: false  
   rolling_window: true
@@ -17,5 +17,5 @@ local_costmap:
 
   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 
-  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, observation_persistence: 0.5}
+  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, observation_persistence: 3.0}
   
