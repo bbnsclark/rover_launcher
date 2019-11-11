@@ -8,8 +8,8 @@ global_costmap:
 
   static_map: false
   rolling_window: true
-  width: 10
-  height: 10
+  width: 20
+  height: 20
   resolution: 0.03
 
   observation_sources: scan
