@@ -1,0 +1,21 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+
+  update_frequency: 15.0
+  publish_frequency: 15.0
+  transform_tolerance: 0.2
+
+  static_map: false  
+  rolling_window: true
+  width: 2
+  height: 2
+
+  resolution: 0.03
+
+  observation_sources: scan stereo
+  
+  scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+
+  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, observation_persistence: 3.0}
+    
