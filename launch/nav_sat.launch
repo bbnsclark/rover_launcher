@@ -2,7 +2,7 @@
 
   <node pkg="tf" type="static_transform_publisher" name="TF_GPS" args="0.12 -0.08 0.1 0.0 0.0 0.0 base_link gps_link 100" />
 
-  <node pkg="robot_localization" type="navsat_transform_node" name="NAVSAT" respawn="true">
+  <node pkg="robot_localization" type="navsat_transform_node" name="NAVSAT" respawn="false">
 
     <param name="magnetic_declination_radians" value="0"/>
     <param name="broadcast_utm_transform" type="bool" value="true"/>
