@@ -8,7 +8,11 @@ screen -d -m -S roscore /home/nvidia/rover/src/rover_launcher/bin/start_roscore.
 
 sleep 5
 
-screen -d -m -S bridge /home/nvidia/rover/src/rover_launcher/bin/start_bridge.sh
+screen -d -m -S rosbridge /home/nvidia/rover/src/rover_launcher/bin/start_rosbridge.sh
+
+sleep 5
+
+screen -d -m -S bbnbridge /home/nvidia/rover/src/rover_launcher/bin/start_bbnbridge.sh
 
 sleep 5
 
