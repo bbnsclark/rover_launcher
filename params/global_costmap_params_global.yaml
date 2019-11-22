@@ -4,13 +4,13 @@ global_costmap:
 
   update_frequency: 10.0
   publish_frequency: 10.0
-  transform_tolerance: 0.5
+  transform_tolerance: 0.2
 
   static_map: false
   rolling_window: true
   width: 20
   height: 20
-  resolution: 0.075
+  resolution: 0.03
 
   observation_sources: scan
   
