@@ -32,10 +32,6 @@ screen -d -m -S lidar /home/nvidia/rover/src/rover_launcher/bin/start_lidar.sh
 
 sleep 5
 
-screen -d -m -S icp /home/nvidia/rover/src/rover_launcher/bin/start_lidar_icp.sh
-
-sleep 5
-
 screen -d -m -S ekf_inertial /home/nvidia/rover/src/rover_launcher/bin/start_ekf_inertial.sh
 
 sleep 5

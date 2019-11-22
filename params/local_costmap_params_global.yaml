@@ -11,7 +11,7 @@ local_costmap:
   width: 5
   height: 5
 
-  resolution: 0.05
+  resolution: 0.1
 
   observation_sources: scan stereo
   
