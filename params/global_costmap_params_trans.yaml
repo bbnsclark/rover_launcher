@@ -8,11 +8,11 @@ global_costmap:
 
   static_map: false
   rolling_window: true
-  width: 20
-  height: 20
+  width: 10
+  height: 10
   resolution: 0.03
 
   observation_sources: scan
   
-  scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: no_scan, marking: true, clearing: true}
+  scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 
