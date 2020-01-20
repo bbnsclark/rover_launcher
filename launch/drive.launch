@@ -10,7 +10,7 @@
     <arg name="run_mode_srv" default="false"/>
     <arg name="publish_tf" default="false"/>
 
-    <node if="$(arg run_diag)" pkg="roboclaw_node" type="roboclaw_main.py" name="DRIVE">
+    <node if="$(arg run_diag)" pkg="rover_motor_driver" type="roboclaw_main.py" name="DRIVE">
         <param name="~dev" value="$(arg dev)"/>
         <param name="~baud" value="$(arg baud)"/>
         <param name="~address" value="$(arg address)"/>
