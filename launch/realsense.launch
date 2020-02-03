@@ -4,7 +4,7 @@
   <arg name="camera"                default="camera"/>
 
   <group ns="$(arg camera)">
-    <include file="$(env HOME)/copter/src/copter_launcher/params/realsense.xml">
+    <include file="$(env HOME)/rover/src/rover_launcher/params/realsense.xml">
       <arg name="serial_no"         value="$(arg serial_no)"/>
       <arg name="json_file_path"    value="$(arg json_file_path)"/>
       <arg name="depth_width"       value="640"/>
