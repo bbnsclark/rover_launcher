@@ -2,7 +2,7 @@
 
   <node pkg="tf" type="static_transform_publisher" name="TF_IMU" args="0.0 0.0 0.2 0.0 0.0 0.0 base_link imu_link 10" />
 
-  <arg name="razor_config_file" default="$(env WS_PATH)/params/imu.yaml"/>
+  <arg name="razor_config_file" default="$(env HOME)/rover/rover_launcher/params/imu.yaml"/>
 
   <node pkg="razor_imu_9dof" type="imu_node.py" name="IMU" output="screen">
     <param name="frame_id" type="string" value="imu_link"/>
