@@ -3,6 +3,14 @@
   <arg name="json_file_path"        default=""/>
   <arg name="camera"                default="camera"/>
 
+  <node pkg="tf" type="static_transform_publisher" name="TF_CAM" args="0.115 0 0.0 0 0 0 base_link camera_link 10" />		
+	<node pkg="tf" type="static_transform_publisher" name="TF_DOF" args="0.0 0.0 0.0 -1.5707 0.0 -1.5707 camera_link camera_depth_optical_frame 200" />
+	<node pkg="tf" type="static_transform_publisher" name="TF_DF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_depth_frame 200" />
+	<node pkg="tf" type="static_transform_publisher" name="TF_CF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_color_frame 200" />	
+	<node pkg="tf" type="static_transform_publisher" name="TF_COF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_color_optical_frame 200" />
+	<node pkg="tf" type="static_transform_publisher" name="TF_ADCF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_aligned_depth_to_color_frame 200" /> 
+
+
   <group ns="$(arg camera)">
     <include file="$(env HOME)/rover/src/rover_launcher/params/realsense.xml">
       <arg name="serial_no"         value="$(arg serial_no)"/>
