@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rosclean purge -y
+/home/nvidia/rover/src/rover_launcher/bin/start_rosclean.sh
 
 sleep 1
 
