@@ -1,5 +1,9 @@
 #!/bin/bash
 
+rosclean purge -y
+
+sleep 1
+
 screen -d -m -S roscore /home/nvidia/rover/src/rover_launcher/bin/start_roscore.sh
 
 sleep 5
