@@ -1,2 +1,0 @@
-rosservice call set_mode 'cmd: "set" target_state: "global"'
-

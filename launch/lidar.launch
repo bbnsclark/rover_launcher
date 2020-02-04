@@ -1,6 +1,6 @@
 <launch>
 
-  <node pkg="tf" type="static_transform_publisher" name="TF_LIDAR" args="0.0 0.0 0.25 0.0 0.0 0.0 base_link lidar_link 200" />
+  <node pkg="tf" type="static_transform_publisher" name="TF_LIDAR" args="0.0 0.0 0.25 0.0 0.0 0.0 base_link lidar_link 10" />
 
   <node pkg="rplidar_ros"  type="rplidarNode" name ="LIDAR" output="screen">
     <param name="serial_port"         type="string" value="/dev/rplidar"/>

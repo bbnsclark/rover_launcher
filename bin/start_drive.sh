@@ -5,8 +5,5 @@
 [ -f "$HOME/rover/devel_isolated/setup.sh" ] && source "$HOME/rover/devel_isolated/setup.sh"
 #[ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
-set -a
-source $HOME/rover/src/rover_launcher/config/CCAST_CONFIG
-
 PYTHONPATH="$PYTHONPATH:/opt/ros/melodic/share/roboclaw_node/src/roboclaw_driver"
 roslaunch $HOME/rover/src/rover_launcher/launch/drive.launch
