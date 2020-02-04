@@ -1,0 +1,7 @@
+ACTION=="add", ATTRS{idVendor}=="148f", ATTRS{idProduct}=="5572", SYMLINK+="wlan_panda"
+ACTION=="add", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="rplidar"
+ACTION=="add", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2404", SYMLINK+="roboclaw"
+ACTION=="add", ATTRS{idVendor}=="2458", ATTRS{idProduct}=="0001", SYMLINK+="ble_tag"
+ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="ftdi"
+ACTION=="add", ATTRS{idVendor}=="8086", ATTRS{idProduct}=="0b3a", SYMLINK+="realsense"
+ACTION=="add", ATTRS{idVendor}=="1b4f", ATTRS{idProduct}=="9d0f", SYMLINK+="razor"
