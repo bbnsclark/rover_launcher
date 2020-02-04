@@ -5,5 +5,6 @@
 [ -f "$HOME/rover/devel_isolated/setup.sh" ] && source "$HOME/rover/devel_isolated/setup.sh"
 #[ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
-PYTHONPATH="$PYTHONPATH:$HOME/rover/src/rover_motor_driver/src/roboclaw_driver"
+export PYTHONPATH="$PYTHONPATH:$HOME/rover/src/rover_motor_driver/src"
+export PYTHONPATH="$PYTHONPATH:$HOME/rover/src/rover_motor_driver/src/roboclaw_driver"
 roslaunch $HOME/rover/src/rover_launcher/launch/drive.launch
