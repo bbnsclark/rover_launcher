@@ -32,6 +32,10 @@ screen -d -m -S ekf_inertial /home/nvidia/rover/src/rover_launcher/bin/start_ekf
 
 sleep 5
 
+screen -d -m -S video /home/nvidia/rover/src/rover_launcher/bin/start_video_server.sh
+
+sleep 5
+
 screen -d -m -S state_obs /home/nvidia/rover/src/rover_launcher/bin/start_state_observer.sh
 
 sleep 5
