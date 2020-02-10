@@ -40,11 +40,11 @@ screen -d -m -S video $HOME/rover/src/rover_launcher/bin/start_video_server.sh
 
 sleep 5
 
-screen -d -m -S avoidance $HOME/rover/src/rover_launcher_sitl/bin/start_avoidance.sh
+screen -d -m -S avoidance $HOME/rover/src/rover_launcher/bin/start_avoidance.sh
 
 sleep 5
 
-screen -d -m -S navigation $HOME/rover/src/rover_launcher_sitl/bin/start_nav.sh
+screen -d -m -S navigation $HOME/rover/src/rover_launcher/bin/start_nav.sh
 
 sleep 5
 
