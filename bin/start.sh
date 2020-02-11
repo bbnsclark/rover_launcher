@@ -55,6 +55,11 @@ echo '    - obstacle avoidance'
 screen -d -m -S avoidance $HOME/rover/src/rover_launcher/bin/start_avoidance.sh
 
 sleep 2
+echo '    - map_tf'
+
+screen -d -m -S map_tf $HOME/rover/src/rover_launcher/bin/start_map_tf.sh
+
+sleep 2
 echo '    - navigation'
 
 screen -d -m -S navigation $HOME/rover/src/rover_launcher/bin/start_nav.sh
