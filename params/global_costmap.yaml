@@ -14,7 +14,7 @@ global_costmap:
 
   plugins: 
     - {name: inflation, type: "costmap_2d::InflationLayer"}
-    - {name: obstacles, type: "costmap_2d::VoxelLayer"}
+    - {name: obstacles, type: "costmap_2d::ObstacleLayer"}
 
   inflation:
     observation_sources: scan stereo
