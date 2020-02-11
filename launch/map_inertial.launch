@@ -1,9 +1,7 @@
 <launch>
 
   <arg name="rs_manager" default="/camera/realsense2_camera_manager"/>
-
   <node pkg="gmapping" type="slam_gmapping" name="GMAP" output="screen">
-
     <param name="base_frame" value="base_link"/>
     <param name="odom_frame" value="odom"/>
     <param name="map_frame"  value="map_inertial"/>
@@ -36,15 +34,10 @@
     <param name="llsamplestep" value="0.01"/>
     <param name="lasamplerange" value="0.005"/>
     <param name="lasamplestep" value="0.005"/>
-
     <remap from="/odom" to ="/odom_inertial" />
-
   </node>
-
   <master auto="start"/>
-
   <!--node name="map_server" pkg="map_server" type="map_server" args="$(find gmapping)/maps/map.pgm 0.04">
     <remap from="/odom" to ="/odom_local" />
   </node-->
-
 </launch> 
