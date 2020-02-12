@@ -5,4 +5,4 @@
 [ -f "$HOME/rover/devel_isolated/setup.sh" ] && source "$HOME/rover/devel_isolated/setup.sh"
 [ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
-rosrun gps_converter node.py
+python $HOME/rover/src/gps_converter/src/node.py
