@@ -13,7 +13,7 @@
     <param name="broadcast_utm_transform" type="bool" value="false"/>
     <param name="broadcast_utm_transform_as_parent_frame" value="false"/>
     <param name="publish_filtered_gps" value="true"/>
-    <param name="frequency" value="1"/>
+    <param name="frequency" value="5"/>
 
     <param name="magnetic_declination_radians" value="0.0"/>
 
