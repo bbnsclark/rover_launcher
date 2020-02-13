@@ -14,23 +14,4 @@ local_costmap:
 
   observation_sources: scan stereo
   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true}
-  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /camera/depth/color/points, marking: true, clearing: true, max_obstacle_height: 0.2, min_obstacle_height: -0.1}
-
-  # plugins: 
-  #   - {name: inflation, type: "costmap_2d::InflationLayer"}
-  #   - {name: obstacles, type: "costmap_2d::ObstacleLayer"}
-
-  # inflation:
-  #   observation_sources: scan stereo
-
-  #   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true, expected_update_rate: 5.0}
-
-  #   stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, expected_update_rate: 3.0}
-
-  # obstacles:
-  #   observation_sources: scan stereo
-
-  #   scan: {sensor_frame: lidar_link, data_type: LaserScan, topic: scan, marking: true, clearing: true, expected_update_rate: 5.0}
-
-  #   stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, expected_update_rate: 3.0}
-  
+  stereo: {sensor_frame: camera_link, data_type: PointCloud2, topic: /obstacles, marking: true, clearing: true, max_obstacle_height: 0.2, min_obstacle_height: -0.1}
