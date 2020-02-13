@@ -9,7 +9,7 @@ echo '    - roscore'
 
 screen -d -m -S roscore $HOME/rover/src/rover_launcher/bin/start_roscore.sh
 
-sleep 7
+sleep 5
 echo '    - realsense'
 
 screen -d -m -S realsense $HOME/rover/src/rover_launcher/bin/start_realsense.sh
