@@ -21,8 +21,8 @@
     <remap from="/gps/fix" to="/gps_navsat_raw" />
     <remap from="/gps/filtered" to="/gps_navsat" />
     <remap from="/imu/data" to="/imu" />
-    <!-- <remap from="/odometry/filtered" to="odom_global" />
-    <remap from="/odometry/gps" to="odom_gps" /> -->
+    <remap from="/odometry/filtered" to="odom_global" />
+    <remap from="/odometry/gps" to="odom_gps" />
 
   </node>
 
