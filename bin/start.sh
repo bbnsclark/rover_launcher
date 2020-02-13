@@ -10,11 +10,6 @@ echo '    - roscore'
 screen -d -m -S roscore $HOME/rover/src/rover_launcher/bin/start_roscore.sh
 
 sleep 2
-echo '    - rosbridge'
-
-screen -d -m -S rosbridge $HOME/rover/src/rover_launcher/bin/start_rosbridge.sh
-
-sleep 5
 echo '    - realsense'
 
 screen -d -m -S realsense $HOME/rover/src/rover_launcher/bin/start_realsense.sh
@@ -69,4 +64,7 @@ echo '    - state observer'
 
 screen -d -m -S state_obs $HOME/rover/src/rover_launcher/bin/start_state_observer.sh
 
-sleep 2
+sleep 5
+echo '    - rosbridge'
+
+screen -d -m -S rosbridge $HOME/rover/src/rover_launcher/bin/start_rosbridge.sh
