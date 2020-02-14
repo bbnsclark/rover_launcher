@@ -37,7 +37,6 @@ DWAPlannerROS:
   stop_time_buffer: 0.5
   scaling_speed: 1.0
   max_scaling_factor: 0.2
-  escape_vel: -0.1
 
 # Oscillation Prevention Parameters
   oscillation_reset_dist: 0.05
