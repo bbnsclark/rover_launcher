@@ -45,11 +45,6 @@ echo '    - video stream'
 screen -d -m -S video $HOME/rover/src/rover_launcher/bin/start_video_server.sh
 
 sleep 2
-echo '    - point cloud converter'
-
-screen -d -m -S pc_conv $HOME/rover/src/rover_launcher/bin/start_pc_convert.sh
-
-sleep 2
 echo '    - obstacle avoidance'
 
 screen -d -m -S avoidance $HOME/rover/src/rover_launcher/bin/start_avoidance.sh
