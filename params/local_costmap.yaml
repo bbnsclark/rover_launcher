@@ -12,12 +12,21 @@ local_costmap:
   height: 8
   resolution: 0.025
 
-  observation_sources: scan stereo
+  observation_sources: scan scan_cloud #stereo
 
   scan: {
     sensor_frame: lidar_link, 
     data_type: LaserScan, 
-    topic: scan, marking: true, 
+    topic: scan, 
+    marking: true, 
+    clearing: true
+    }
+
+  scan_cloud: {
+    sensor_frame: lidar_link, 
+    data_type: LaserScan, 
+    topic: scan_cloud, 
+    marking: true, 
     clearing: true
     }
 
