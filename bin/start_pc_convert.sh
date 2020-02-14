@@ -5,4 +5,4 @@
 [ -f "$HOME/copter/devel_isolated/setup.sh" ] && source "$HOME/copter/devel_isolated/setup.sh"
 [ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
-roslaunch $HOME/copter/src/rover_launcher/launch/point_cloud_converter.launch
+roslaunch $HOME/rover/src/rover_launcher/launch/point_cloud_converter.launch
