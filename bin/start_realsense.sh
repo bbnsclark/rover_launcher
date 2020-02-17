@@ -5,4 +5,4 @@
 [ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
 
-roslaunch $HOME/rover/src/rover_launcher/launch/realsense.launch json_file_path:=/home/nvidia/rover/src/rover_launcher/params/realsense.json
+roslaunch $HOME/rover/src/rover_launcher/launch/realsense.launch

@@ -1,6 +1,6 @@
 <launch>
   <arg name="serial_no"             default=""/>
-  <arg name="json_file_path"        default=""/>
+  <arg name="json_file_path"        default="$(env HOME)/rover/src/rover_launcher/params/realsense.json"/>
   <arg name="camera"                default="camera"/>
 
   <node pkg="tf" type="static_transform_publisher" name="TF_CAM" args="0.115 0 0. 0 0 0 base_link camera_link 1" />		
