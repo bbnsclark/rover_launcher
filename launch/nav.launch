@@ -2,13 +2,13 @@
 
   <node pkg="move_base" type="move_base" respawn="false" name="MOVE" output="screen">
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
-    <!-- <param name="base_global_planner" value="carrot_planner/CarrotPlanner"/> -->
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/costmap_common.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/costmap_common.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/local_costmap.yaml" command="load" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/global_costmap.yaml" command="load" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/move_base.yaml" command="load" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/dwa_local_planner.yaml" command="load" />
+    <rosparam file="$(env HOME)/rover/src/rover_launcher/params/global_planner.yaml" command="load" />
     <remap from="/odom" to ="/odom_inertial" />
   </node>
 
