@@ -24,35 +24,35 @@ world_frame: odom           # Defaults to the value of odom_frame if unspecified
 odom0: /odom_wheel
 
 odom0_config: [true,  true,  false,
+               false, false, false,
+               false, false, false,
                false, false, true,
-               false, false, false,
-               false, false, false,
                false, false, false]
 
-odom0_queue_size: 10
+# odom0_queue_size: 10
 odom0_nodelay: false
 odom0_differential: true
 odom0_relative: false
-odom0_pose_rejection_threshold: 0.5
-odom0_twist_rejection_threshold: 0.1
+# odom0_pose_rejection_threshold: 0.5
+# odom0_twist_rejection_threshold: 0.1
 
 ##################################
 ##################################
 
-odom1: /odom_lidar
+# odom1: /odom_lidar
 
-odom1_config: [true,  true,  false,
-               false, false, true,
-               false, false, false,
-               false, false, false,
-               false, false, false]
+# odom1_config: [true,  true,  false,
+#                false, false, true,
+#                false, false, false,
+#                false, false, false,
+#                false, false, false]
 
-odom1_queue_size: 10
-odom1_nodelay: false
-odom1_differential: true
-odom1_relative: false
-odom1_pose_rejection_threshold: 1.0
-odom1_twist_rejection_threshold: 0.2
+# odom1_queue_size: 10
+# odom1_nodelay: false
+# odom1_differential: true
+# odom1_relative: false
+# odom1_pose_rejection_threshold: 1.0
+# odom1_twist_rejection_threshold: 0.2
 
 ##################################
 ##################################
@@ -62,16 +62,16 @@ imu0: /imu
 imu0_config: [false, false, false,
               false, false, true,
               false, false, false,
-              false, false, true,
+              false, false, false,
               false, false, false]
 
-imu0_nodelay: false
+imu0_nodelay: true
 imu0_differential: true
 imu0_relative: false 
-imu0_queue_size: 20
-imu0_pose_rejection_threshold: 0.25                 
-imu0_twist_rejection_threshold: 0.1                
-imu0_linear_acceleration_rejection_threshold: 0.1 
+imu0_queue_size: 5
+# imu0_pose_rejection_threshold: 0.25                 
+# imu0_twist_rejection_threshold: 0.1                
+# imu0_linear_acceleration_rejection_threshold: 0.1 
 imu0_remove_gravitational_acceleration: true
 
 ##################################
