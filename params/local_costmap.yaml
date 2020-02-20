@@ -11,6 +11,8 @@ local_costmap:
   width: 8
   height: 8
   resolution: 0.025
+  inflation_radius: 1.2
+  cost_scaling_factor: 3.0
 
   observation_sources: scan stereo
 
