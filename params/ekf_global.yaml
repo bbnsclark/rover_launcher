@@ -67,7 +67,7 @@ odom2_config: [true,  true,  false,
 
 odom2_queue_size: 1
 
-odom2_differential: false
+odom2_differential: true
 
 odom2_relative: false
 
