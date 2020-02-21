@@ -17,7 +17,7 @@
 
     <param name="magnetic_declination_radians" value="0.0"/>
 
-    <param name="yaw_offset" value="0.0"/>
+    <param name="yaw_offset" value="-1.5707"/>
     <remap from="/gps/fix" to="/gps_navsat_raw" />
     <remap from="/gps/filtered" to="/gps_navsat" />
     <remap from="/imu/data" to="/imu" />
