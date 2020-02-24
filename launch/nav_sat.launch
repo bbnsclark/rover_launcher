@@ -4,6 +4,7 @@
 
   <node pkg="robot_localization" type="ekf_localization_node" name="EKF_GLOBAL" clear_params="true">
     <rosparam command="load" file="$(env HOME)/rover/src/rover_launcher/params/ekf_global.yaml" />
+    <remap from="/odometry/filtered" to="/odom_global" />
   </node>
 
   <node pkg="robot_localization" type="navsat_transform_node" name="NAVSAT" respawn="false">
@@ -22,7 +23,8 @@
     <remap from="/gps/filtered" to="/gps_navsat" />
     <remap from="/imu/data" to="/imu" />
     <remap from="/odometry/gps" to="odom_gps" />
-
+    <remap from="/odometry/filtered" to="/odom_global" />
+    
   </node>
 
 </launch>
