@@ -1,4 +1,4 @@
 NavfnROS:
 
   default_tolerance: 1.0
-  planner_frequency: 1.0
+  planner_frequency: 0.25
