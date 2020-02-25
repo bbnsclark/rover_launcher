@@ -19,7 +19,6 @@
         <param name="~base_width" value="$(arg base_width)"/>
         <param name="~publish_tf" value="$(arg publish_tf)"/>
         <param name="frame_id" type="string" value="base_link"/>
-        <remap from="wheel_odom" to="odom_wheel"/>
     </node>
 
 </launch>

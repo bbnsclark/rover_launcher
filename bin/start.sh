@@ -37,7 +37,7 @@ screen -d -m -S lidar $HOME/rover/src/rover_launcher/bin/start_lidar.sh
 sleep 2
 echo '    - kalman filter'
 
-screen -d -m -S ekf_inertial $HOME/rover/src/rover_launcher/bin/start_ekf_inertial.sh
+screen -d -m -S ekf $HOME/rover/src/rover_launcher/bin/start_ekf.sh
 
 sleep 2
 echo '    - video stream'

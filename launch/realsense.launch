@@ -8,7 +8,6 @@
 	<node pkg="tf" type="static_transform_publisher" name="TF_ADCF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_aligned_depth_to_color_frame 1000" /> 
 
 	<node pkg="realsense_driver" type="node.py" name="REALSENSE" clear_params="true">
-	<!-- <remap from="/odometry/filtered" to="/odom_inertial" /> -->
 	</node>
 
 </launch>

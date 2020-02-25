@@ -1,8 +1,0 @@
-<launch>
-
-  <node pkg="robot_localization" type="ekf_localization_node" name="EKF_INERTIAL" clear_params="true">
-    <rosparam command="load" file="$(env HOME)/rover/src/rover_launcher/params/ekf_inertial.yaml" />
-    <remap from="/odometry/filtered" to="/odom_inertial" />
-  </node>
-
-</launch> 
