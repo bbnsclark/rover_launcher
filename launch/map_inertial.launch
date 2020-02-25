@@ -34,7 +34,7 @@
     <param name="llsamplestep" value="0.01"/>
     <param name="lasamplerange" value="0.005"/>
     <param name="lasamplestep" value="0.005"/>
-    <remap from="/odom" to ="/odom_wheel" />
+    <remap from="/odom" to ="/odom_inertial" />
   </node>
   <master auto="start"/>
   <!--node name="map_server" pkg="map_server" type="map_server" args="$(find gmapping)/maps/map.pgm 0.04">
