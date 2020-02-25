@@ -2,3 +2,4 @@ NavfnROS:
 
   default_tolerance: 1.0
   planner_frequency: 2.0
+  orientation_mode: 1
