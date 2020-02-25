@@ -5,4 +5,4 @@
 [ -f "$HOME/rover/devel_isolated/setup.sh" ] && source "$HOME/rover/devel_isolated/setup.sh"
 [ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
-rosrun exploration_server node.py
+roslaunch exploration_server exploration.launch
