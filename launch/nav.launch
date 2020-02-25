@@ -9,7 +9,7 @@
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/move_base.yaml" command="load" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/dwa_local_planner.yaml" command="load" />
     <rosparam file="$(env HOME)/rover/src/rover_launcher/params/global_planner.yaml" command="load" />
-    <remap from="/odom" to ="/odom_inertial" />
+    <remap from="/odom" to ="/odom_wheel" />
   </node>
 
   <!-- <node pkg="clear_costmap" type="clear_costmap.py" respawn="false" name="clear_costmap" output="screen" /> -->
