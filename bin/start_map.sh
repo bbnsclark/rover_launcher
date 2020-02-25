@@ -5,4 +5,4 @@
 [ -f "$HOME/rover/devel_isolated/setup.sh" ] && source "$HOME/rover/devel_isolated/setup.sh"
 [ -f "/etc/default/ros" ] && source "/etc/default/ros"
 
-roslaunch $HOME/rover/src/rover_launcher/launch/map_inertial.launch
+roslaunch $HOME/rover/src/rover_launcher/launch/map.launch
