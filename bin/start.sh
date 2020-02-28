@@ -14,12 +14,12 @@ echo '    - robot'
 
 screen -d -m -S robot $HOME/rover/src/rover_launcher/bin/start_robot_description.sh
 
-sleep 10
+sleep 2
 echo '    - realsense'
 
 screen -d -m -S realsense $HOME/rover/src/rover_launcher/bin/start_realsense.sh
 
-sleep 2
+sleep 10
 echo '    - april tag detections'
 
 screen -d -m -S april_tags $HOME/rover/src/rover_launcher/bin/start_tag_detection.sh
