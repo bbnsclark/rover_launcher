@@ -9,6 +9,11 @@ echo '    - roscore'
 
 screen -d -m -S roscore $HOME/rover/src/rover_launcher/bin/start_roscore.sh
 
+sleep 2
+echo '    - robot'
+
+screen -d -m -S robot $HOME/rover/src/rover_launcher/bin/start_robot_description.sh
+
 sleep 10
 echo '    - realsense'
 
