@@ -64,8 +64,3 @@ echo '    - rosbridge'
 
 screen -d -m -S rosbridge $HOME/rover/src/rover_launcher/bin/start_rosbridge.sh
 
-sleep 2
-echo '    - camera throttle'
-
-screen -d -m -S throttle $HOME/rover/src/rover_launcher/bin/start_throttle.sh
-
