@@ -8,6 +8,7 @@
 	<node pkg="tf" type="static_transform_publisher" name="TF_ADCF" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 camera_link camera_aligned_depth_to_color_frame 1000" /> 
 
 	<node pkg="realsense_driver" type="node.py" name="REALSENSE" clear_params="true">
+	    <param name="stream_on_boot"            type="bool"   value="true"/>
 	</node>
 
 </launch>
