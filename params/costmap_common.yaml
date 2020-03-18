@@ -3,6 +3,6 @@ obstacle_range: 4.0
 raytrace_range: 5.0
 
 footprint: [[-0.25, -0.23], [-0.25, 0.23], [0.25, 0.23], [0.25, -0.23]]
-footprint_padding: 0.2
+footprint_padding: 0.05
 
 map_type: costmap
